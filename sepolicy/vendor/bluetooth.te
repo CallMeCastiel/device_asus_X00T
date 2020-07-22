@@ -1,2 +1,0 @@
-allow bluetooth fm_prop:file { read } ;
-get_prop(bluetooth, hal_audio_prop)
