@@ -29,11 +29,13 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 CHERISH_MAINTAINER := 🔥 Imbatmaannn 🔥
 
 #Tag NAame
-export CHERISH_BUILD_TYPE=BLOOM
+export CHERISH_BUILD_TYPE=HOMEMADE
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
+#TARGET_GAPPS_ARCH := arm64
+# Vanilla
+CHERISH_NOGAPPS=true
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00T
