@@ -35,4 +35,8 @@ allow system_app sysfs_tbrightness:file { open getattr write };
 set_prop(system_app, boosts_prop);
 get_prop(system_app, boosts_prop);
 
+#BatteryInfo
+allow system_app sysfs_battery_supply:file { read }; 
+allow system_app sysfs_battery_supply:file { open };
+allow system_app sysfs_battery_supply:file { getattr };
 allow system_app sysfs_battery_supply:dir { search };
