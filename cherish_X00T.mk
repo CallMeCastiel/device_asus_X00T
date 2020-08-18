@@ -26,9 +26,10 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Maintainer
-CHERISH_MAINTAINER := 🔥 Imbatmaannn 🔥
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cherish.maintainer=Imbatmaannn
 
-#Tag NAame
+#Tag Name
 export CHERISH_BUILD_TYPE=HOMEMADE
 
 #Boot Animation res
