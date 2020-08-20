@@ -547,4 +547,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ZenParts
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 $(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)
