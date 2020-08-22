@@ -20,27 +20,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common HavocOS stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit from X00T device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Maintainer
-CHERISH_MAINTAINER := 🔥 Imbatmaannn 🔥
-
-#Tag NAame
-export CHERISH_BUILD_TYPE=HOMEMADE
+#Tag Name
+export BLISS_BUILDTYPE=UNOFFICIALLY_NIGHT
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
-#TARGET_GAPPS_ARCH := arm64
-# Vanilla
-CHERISH_NOGAPPS=true
+
+#Gapps
+TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00T
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := cherish_X00T
+PRODUCT_NAME := bliss_X00T
 PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
