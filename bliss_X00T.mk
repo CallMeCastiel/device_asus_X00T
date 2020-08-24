@@ -31,8 +31,10 @@ export BLISS_BUILDTYPE=UNOFFICIALLY_NIGHT
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-#Gapps
+# Inherit PixelGApps
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
 TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00T
