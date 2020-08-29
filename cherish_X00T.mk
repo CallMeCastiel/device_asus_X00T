@@ -27,10 +27,10 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cherish.maintainer=Imbatmaannn
+    ro.cherish.maintainer=🔥Imbatmaannn🔥
 
 #Tag Name
-export CHERISH_BUILD_TYPE=HOMEMADE
+CHERISH_BUILD_TYPE=HOMEMADE
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
