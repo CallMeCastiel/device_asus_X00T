@@ -605,6 +605,8 @@
 
     <!-- Should we filter any display modes which are unampped? -->
     <bool name="config_filterDisplayModes">true</bool>
+ <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/Zenmotions/Zenmotions.apk</string>
+    <string name="config_deviceKeyHandlerClass" translatable="false">com.asus.zenmotions.KeyHandler</string>
 
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">14dp</dimen>

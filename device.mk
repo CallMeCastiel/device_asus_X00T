@@ -555,6 +555,7 @@ PRODUCT_COPY_FILES += \
 
 # Zen Parts
 PRODUCT_PACKAGES += \
-    ZenParts
+    ZenParts \
+    Zenmotions
 
 $(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)
