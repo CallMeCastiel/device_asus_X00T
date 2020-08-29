@@ -166,8 +166,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
-    vendor.qti.hardware.camera.device@1.0 \
-    Snap
+    vendor.qti.hardware.camera.device@1.0
 
 # Charging
 PRODUCT_PACKAGES += \
@@ -365,6 +364,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay-system
+
+# Prebuilts
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
 
 # RRO configuration
 TARGET_USES_RRO := true
