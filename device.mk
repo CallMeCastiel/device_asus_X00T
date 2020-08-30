@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.havoc.overlay.lawnconf
+    ro.boot.vendor.overlay.theme=com.cherish.overlay.lawnconf
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
