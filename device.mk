@@ -559,4 +559,8 @@ PRODUCT_PACKAGES += \
     ZenParts \
     Zenmotions
 
+# Lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
+
 $(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)
