@@ -365,7 +365,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Prebuilts
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    GoogleCameraGo \
+    GalleryGo
 
 # RRO configuration
 TARGET_USES_RRO := true
