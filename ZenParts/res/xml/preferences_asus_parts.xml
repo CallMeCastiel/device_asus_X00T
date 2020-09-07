@@ -19,7 +19,7 @@
         android:key="audio"
         android:title="@string/audio_title">
         <com.asus.zenparts.preferences.CustomSeekBarPreference
-            android:defaultValue="0"
+            android:defaultValue="2"
             android:key="headphone_gain"
             android:max="20"
             app:min="-40"
@@ -59,6 +59,30 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="boost"
+        android:title="@string/boost_title" >
+
+        <com.asus.zenparts.preferences.SecureSettingListPreference
+            android:key="gpuboost"
+            android:dialogTitle="@string/gpuboost_dialogTitle"
+            android:entries="@array/gpuboost_profiles"
+            android:entryValues="@array/gpuboost_values"
+            android:icon="@drawable/ic_gpuboost" 
+            android:defaultValue="0"
+            android:title="@string/gpuboost_title" />
+
+        <com.asus.zenparts.preferences.SecureSettingListPreference
+            android:key="cpuboost"
+            android:dialogTitle="@string/cpuboost_dialogTitle"
+            android:entries="@array/cpuboost_profiles"
+            android:entryValues="@array/cpuboost_values"
+            android:icon="@drawable/ic_cpuboost" 
+            android:defaultValue="0"
+            android:title="@string/cpuboost_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="vibration"
         android:title="@string/vibration_title">
         <com.asus.zenparts.preferences.VibratorStrengthPreference
@@ -78,31 +102,6 @@
             app:min="1"
             android:icon="@drawable/ic_torch"
             android:title="@string/torch_brightness_title" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-    android:key="selinux"
-    android:title="@string/selinux_category">
-
-    <Preference
-        android:summary="@string/selinux_explanation_summary"
-        android:selectable="false"/>
-
-    <SwitchPreference
-        android:key="selinux_mode"
-        android:title="@string/selinux_mode_title"
-        android:summaryOn="@string/selinux_enforcing_summary"
-        android:summaryOff="@string/selinux_permissive_summary"
-        android:icon="@drawable/ic_linux" />
-
-    <SwitchPreference
-        android:key="selinux_persistence"
-
-        android:title="@string/selinux_persistence_title"
-        android:summary="@string/selinux_persistence_summary"
-        android:defaultValue="true"
-        android:icon="@drawable/ic_power" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
